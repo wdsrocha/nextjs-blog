@@ -4,9 +4,14 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Wesley Rocha";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "wdsrocha's blog";
 
-export default function Layout({ children, home }) {
+interface Props {
+  children: React.ReactNode;
+  home?: boolean;
+}
+
+export const Layout: React.FC<Props> = ({ children, home = false }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -63,4 +68,6 @@ export default function Layout({ children, home }) {
       )}
     </div>
   );
-}
+};
+
+export default Layout;
