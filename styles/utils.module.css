@@ -50,3 +50,22 @@
 .lightText {
   color: #999;
 }
+
+.expander
+{
+    display: inline-flex;
+}
+
+.expander span:nth-child(even)
+{
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+    letter-spacing: -1em;
+}
+
+@media (hover: hover) {
+  .expander:hover span:nth-child(even)
+  {
+      letter-spacing: 0;
+  }
+}

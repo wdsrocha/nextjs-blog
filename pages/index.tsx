@@ -30,7 +30,19 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>👋 Hello there, it's me!</p>
+        <p>
+          👋 Hello there, it's me,{" "}
+          <span className={utilStyles.expander}>
+            <span className="font-bold">w</span>
+            <span>esley&nbsp;</span>
+            <span className="font-bold">d</span>
+            <span>a&nbsp;</span>
+            <span className="font-bold">s</span>
+            <span>ilva&nbsp;</span>
+            <span className="font-bold">rocha</span>
+          </span>
+          !
+        </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
